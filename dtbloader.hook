@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = dtbloader
+
+[Action]
+Description = Gracefully upgrading dtbloader...
+When = PostTransaction
+Exec = /usr/bin/install-dtbloader
